@@ -1,36 +1,36 @@
 def calculator():
     print("=== Simple Calculator ===")
     
-    num1 = float(input("Pehla number daalo: "))
-    num2 = float(input("Doosra number daalo: "))
+    num1 = float(input("First number: "))
+    num2 = float(input("Second number: "))
     
-    print("\nOperation chunao:")
-    print("1. Jama (+)")
-    print("2. Minus (-)")
-    print("3. Zarb (*)")
-    print("4. Taqseem (/)")
+    print("\nOperation chose:")
+    print("1. add (+)")
+    print("2. sub (-)")
+    print("3. multi (*)")
+    print("4. div (/)")
     
-    choice = input("1/2/3/4 daalo: ")
+    choice = input("1/2/3/4 add: ")
     
     if choice == "1":
         result = num1 + num2
-        print(f"\nJawab: {num1} + {num2} = {result}")
+        print(f"\nanswer: {num1} + {num2} = {result}")
         
     elif choice == "2":
         result = num1 - num2
-        print(f"\nJawab: {num1} - {num2} = {result}")
+        print(f"\nAnswer: {num1} - {num2} = {result}")
         
     elif choice == "3":
         result = num1 * num2
-        print(f"\nJawab: {num1} * {num2} = {result}")
+        print(f"\nAnswer: {num1} * {num2} = {result}")
         
     elif choice == "4":
         if num2 == 0:
-            print("\nGalti! Zero se taqseem nahi ho sakti!")
+            print("\nwronge! Zero se taqseem nahi ho sakti!")
         else:
             result = num1 / num2
-            print(f"\nJawab: {num1} / {num2} = {result}")
+            print(f"\nAnswer: {num1} / {num2} = {result}")
     else:
-        print("\nGalat option!")
+        print("\nwronge option!")
 
 calculator()
